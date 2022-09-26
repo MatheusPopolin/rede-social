@@ -1,0 +1,27 @@
+.modal_container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-grey-opacity-1);
+}
+
+.modal_default{
+    width: 760px;
+    background-color: var(--color-white-fixed);
+    border-radius: 8px;
+    padding: 40px 24px;
+    position: relative;
+}
+
+.modal_default > h2{
+    margin-bottom: 20px;
+}
+
+.none{
+    display: none;
+}

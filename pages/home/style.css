@@ -1,0 +1,82 @@
+main{
+    padding: 0 100px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.container_left{
+    width: 60%;
+}
+.user{
+    width: 220px;
+    height: 52px;
+    display: flex;
+    justify-content: flex-start;    
+    margin-bottom: 26px;
+    gap: 12px;
+}
+.user > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.criar_post{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 22px;    
+}
+.criar_post > button{
+    width: min-content;
+}
+.posts{
+    width: 100%;
+    display: flex;
+    flex-direction: column;    
+}
+.posts li{
+    margin-bottom: 52px;
+}
+.posts > h2{
+    margin-bottom: 52px;
+}
+.posts li > h2{
+    margin-bottom: 20px;
+}
+.posts li > p{
+    margin-bottom: 20px;
+}
+.posts_footer{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+.like_container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.sugest_users{
+    width: 30%;
+}
+.sugest_users li{
+    margin-bottom: 61px;
+}
+.sugest_users > h2{
+    margin-bottom: 51px;
+}
+.sugest_users li .user{
+    margin: 0 10px 0 0;
+}
+.sugest_users li{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+

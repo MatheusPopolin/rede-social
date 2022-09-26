@@ -4,13 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/globalStyles.css" />
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/colors.css">
+    <link rel="stylesheet" href="/styles/fonts.css">
+    <link rel="stylesheet" href="/styles/inputs.css">
+    <link rel="stylesheet" href="/styles/buttons.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/modals.css">    
     <link rel="stylesheet" href="style.css" />
     <title>TechPosters - Home</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header class="header">
+      <img src="/assets/img/logo.svg" alt="">
+      <button class="button_grey_1 text-2">Sair</button>
+    </header>
+    <main>
+      <div class="container_left">
+        <div class="user">
+          <img src="/assets/img/user1.svg" alt="">
+          <div>
+            <h2 class="title_2 color_grey_1">Samuel Leão</h2>
+            <h3 class="text_2 color_grey_2">Front end Engineer</h3>
+          </div>
+        </div>
+        <section class="criar_post">
+          <input id="titleNewPost" class="input_default text_1" type="text" placeholder="Digitar título do post">
+          <input id="textNewPost" class="input_default text_1 post_description" type="text" placeholder="Digitar descrição do post">
+          <button class="button_primary text_2" id="buttonPost">Postar</button>
+        </section>        
+        <section class="posts">
+          <h2 class="title_1 color_grey_1">Posts</h2>
+          <ul id="postsList">
+            
+          </ul>
+        </section>
+      </div>
+      <section class="sugest_users">
+        <h2 class="title_2 color_grey_1">Sugestões para você seguir</h2>
+        <ul id="sugestsList">
+          
+        </ul>
+      </section>      
+    </main>    
   </body>
   <script src="/script/database/users.js"></script>
   <script src="/script/database/posts.js"></script>
