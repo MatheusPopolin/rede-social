@@ -50,12 +50,12 @@ function createCardSugest(idUser){
     buttonFollow.innerText = "Seguir";    
     cardSugest.append(buttonFollow);
     buttonFollow.addEventListener("click",function(event){
-        event.path[0].classList.toggle("active");
-        if(event.path[0].innerText == "Seguindo"){
-            event.path[0].innerText = "Seguir"
+        event.target.classList.toggle("active");
+        if(event.target.innerText == "Seguindo"){
+            event.target.innerText = "Seguir"
         }
         else{
-            event.path[0].innerText = "Seguindo" 
+            event.target.innerText = "Seguindo" 
         }                     
     });
     return cardSugest;    
@@ -89,7 +89,7 @@ function createModalPost(idPost){
     buttonClose.classList.add("title_1");
     buttonClose.innerText = "X";   
     buttonClose.addEventListener("click",function(event){
-        (event.path[2].remove());
+        (event.target.parentNode.parentNode.remove());
     })
     modalDefault.appendChild(buttonClose);
     modalContainer.appendChild(modalDefault);
