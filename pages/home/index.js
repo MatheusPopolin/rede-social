@@ -20,7 +20,7 @@ function createCardPost(idPost){
     })
     let likeContainer = document.createElement("div");
     likeContainer.classList.add("like_container");
-    likeContainer.innerHTML = ` <img src="/assets/img/like.png" alt="">
+    likeContainer.innerHTML = ` <img src="../../assets/img/like.png" alt="">
                                 <p class="text_2">0</p>`;
     cardPostFooter.append(buttonOpenPost, likeContainer);
     cardPost.appendChild(cardPostFooter);
